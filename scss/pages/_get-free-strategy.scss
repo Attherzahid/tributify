@@ -1,0 +1,18 @@
+.strategy-sec{
+    .box-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .icon-wrapper{
+            .icon{
+                width: 56px;
+                height: 56px; 
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #F4F2F0;
+            }
+        }
+    }
+}

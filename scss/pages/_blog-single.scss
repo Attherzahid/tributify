@@ -1,0 +1,37 @@
+.card {
+    padding: 22px;
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: black;
+            border-color: black;
+            color: white;
+
+            img {
+                filter: brightness(1000%);
+            }
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+
+
+    }
+}
+
+.contact-form {
+    padding: 30px 20px;
+}

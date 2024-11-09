@@ -1,0 +1,252 @@
+@keyframes dash {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: 500;
+    }
+}
+
+.line-obj {
+    position: absolute;
+    transition: 2s;
+
+    path {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: dash 3s ease infinite alternate-reverse;
+    }
+}
+
+.banner-sec {
+    padding: clamp(45px, 7vw, 75px) 0;
+    overflow: hidden;
+    background-color: var(--green);
+    position: relative;
+
+    .line-obj {
+        position: absolute;
+        left: 10%;
+        top: 0;
+    }
+
+    .obj-3 {
+        top: 10px;
+        left: 90%;
+    }
+
+    .play-btn {
+        position: absolute;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        bottom: 0;
+        left: 80%;
+        animation: 1.5s pulse infinite;
+        box-shadow: 0 0 0 14px transparent;
+        transition: .3s;
+        z-index: 1;
+
+        img {
+            transition: .3s;
+        }
+
+        &:hover {
+            animation: unset;
+            background-color: var(--primary);
+
+            img {
+                filter: brightness(.4);
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                box-shadow: 0 0 0 0 white;
+            }
+        }
+    }
+
+    video {
+        border-radius: 16px;
+        width: 100%;
+    }
+
+    .arrow-obj {
+        position: absolute;
+        bottom: 0;
+        left: 80%;
+        transform: translateX(-50%);
+        z-index: 0;
+        animation: 4s obj-popin linear infinite;
+    }
+
+
+    .circle-obj {
+        position: absolute;
+        z-index: 0;
+        border-radius: 50%;
+        filter: blur(200px);
+
+        &.circle-obj-1 {
+            opacity: .1;
+            width: 590px;
+            height: 590px;
+            left: calc(50% - 933px);
+            top: -100px;
+            background-color: var(--primary);
+        }
+
+        &.circle-obj-2 {
+            bottom: -100px;
+            opacity: .3;
+            width: 360px;
+            height: 360px;
+            left: calc(50% - 180px);
+            background: rgb(94, 216, 179);
+            background: linear-gradient(145deg, rgba(94, 216, 179, 1) 0%, rgba(77, 251, 136, 1) 100%);
+        }
+
+        &.circle-obj-3 {
+            width: 144px;
+            height: 144px;
+            left: 80%;
+            top: 40%;
+            background-color: var(--primary);
+            filter: blur(100px);
+            opacity: .3;
+        }
+
+        @keyframes circleObjAnim {
+            from {
+                transform: translate(0%, 100%);
+            }
+
+            to {
+                transform: translate(0%, 0%);
+            }
+        }
+    }
+
+    .obj {
+        position: absolute;
+        z-index: 0;
+
+        &.obj-2 {
+            left: 20%;
+            bottom: 0;
+            transform: scale(1);
+            animation: 4s obj-popin linear infinite;
+
+            @keyframes obj-popin {
+                0% {
+                    transform: scale(1);
+                }
+
+                70% {
+                    transform: scale(1);
+                }
+
+                80% {
+                    transform: scale(0);
+                }
+
+                95% {
+                    transform: scale(1.4);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+
+    }
+}
+
+.featured-blog-sec {
+    img {
+        border-radius: 16px;
+    }
+
+    .card {
+        width: calc(100% - 40px);
+        margin: -200px auto 0 auto;
+        background-color: white;
+        position: relative;
+    }
+}
+.blog-sec {
+    .play-btn {
+        position: absolute;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: 1.5s pulse infinite;
+        box-shadow: 0 0 0 14px transparent;
+        transition: .3s;
+        z-index: 1;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            transition: .3s;
+        }
+
+        &:hover {
+            animation: unset;
+            background-color: var(--primary);
+
+            img {
+                filter: brightness(.4);
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                box-shadow: 0 0 0 0 white;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .featured-blog-sec {
+        .card {
+            margin-top: -60px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-sec {
+        .line-obj {
+            width: 90px;
+            height: 60px;
+        }
+
+        .obj.obj-2 {
+            width: 50px;
+            height: 58px;
+        }
+
+        .arrow-obj {
+            left: 75%;
+
+            img {
+                width: 100px;
+                height: 90px;
+            }
+        }
+
+        .obj-3 {
+            left: 75%;
+        }
+    }
+}
