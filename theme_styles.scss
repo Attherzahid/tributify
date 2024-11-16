@@ -43,7 +43,6 @@
 .justify-content-between {
   justify-content: space-between;
 }
-
 .flex-column {
   flex-direction: column;
 }
@@ -57,11 +56,9 @@
 .text-start {
   text-align: start;
 }
-
 .h-100 {
   height: 100%;
 }
-
 .w-100 {
   width: 100%;
 }
@@ -96,6 +93,9 @@
 .mb-5 {
   margin-bottom: 40px !important;
 }
+.mb-90 {
+    margin-bottom: 90px;
+}
 .mt-0 {
   margin-top: 0;
 }
@@ -114,7 +114,6 @@
 .gap-4 {
   gap: 32px;
 }
-
 .fs-14 {
   font-size: 14px;
 }
@@ -127,6 +126,9 @@
 .fs-22 {
   font-size: 22px;
 }
+.fs-40 {
+    font-size: 40px;
+}
 .fw-normal {
   font-weight: normal;
 }
@@ -135,6 +137,9 @@
 }
 .fw-bold {
   font-weight: 700;
+}
+.fw-black {
+    font-weight: 900;
 }
 .bg-center-cover-norepeat {
   background-position: center;
@@ -240,14 +245,21 @@
 }
 .list-with-icon {
   gap: 10px;
-  .list-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    .icon-wrapper {
-      padding: 14px;
-      border-radius: 8px;
-      background-color: var(--primary-light);
+  display: flex;
+  flex-direction: column;
+  li {
+    position: relative;
+    padding: 0 30px;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(./assets/img/icons/list-style-disc-ico.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        top: 2px;
+        left: 0;
     }
   }
 }
@@ -262,6 +274,14 @@
 }
 .round-20 {
   border-radius: 20px;
+}
+.badge {
+    border: 1px solid #C2C2C2;
+    border-radius: 24px;
+    padding: 2px 16px;
+    line-height: 30px;
+    color: var(--gray-3);
+    width: fit-content;
 }
 @media (min-width: 991px) {
   .d-lg-block {

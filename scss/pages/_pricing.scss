@@ -1,0 +1,73 @@
+.banner-sec {
+  padding: clamp(45px, 5vw, 60px) 0;
+  p {
+    font-size: clamp(16px, 4vw, 22px);
+  }
+}
+
+.featured-card-sec {
+  .card {
+    padding: 42px 28px;
+    background-color: var(--ghost-white);
+    border-radius: 20px;
+    height: 100%;
+
+    .offer-name {
+      font-size: clamp(20px, 4vw, 24px);
+    }
+    .price {
+      span {
+        font-size: clamp(35px, 4vw, 40px);
+      }
+    }
+    p {
+      font-size: clamp(13px, 4vw, 16px);
+    }
+    .custom-hr {
+      border-bottom: 1px solid #4265b250;
+    }
+    .list-with-icon {
+      font-size: clamp(13px, 4vw, 16px);
+    }
+    a {
+      max-width: 100%;
+    }
+  }
+  .featured {
+    .badge {
+      color: var(--bright-gray);
+    }
+    p,
+    .list-with-icon {
+      li {
+        &::before {
+          filter: brightness(100);
+        }
+      }
+    }
+    .custom-hr {
+      border-bottom: 1px solid #ffffff35;
+    }
+    .btn::before {
+      background-image: url("./../../assets/img/icons/btn-blue-arrow.svg");
+    }
+  }
+}
+
+@media (max-width: 1209px) {
+  .mb-w1209-162px {
+    margin-bottom: 162px;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-card-sec {
+    .card {
+      padding: 24px 20px;
+      background-color: var(--ghost-white);
+      border-radius: 20px;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
