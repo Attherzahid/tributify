@@ -1,25 +1,27 @@
 {
-    "dependencies": {
-        "sass": "^1.71.1"
-    },
-    "scripts": {
-        "components": "sass --watch scss/components/_all_components.scss assets/css/all_components.css --style compressed",
-        "base": "sass --watch scss/base/_base.scss assets/css/base.css --style compressed",
-        "home": "sass --watch scss/pages/_home.scss assets/css/home.css --style compressed",
-        "pricing": "sass --watch scss/pages/_pricing.scss assets/css/pricing.css --style compressed",
-        "content-page": "sass --watch scss/pages/_content-page.scss assets/css/content-page.css --style compressed",
-        "content-page-single": "sass --watch scss/pages/_content-page-single.scss assets/css/content-page-single.css --style compressed",
-        "about": "sass --watch scss/pages/_about-us.scss assets/css/about-us.css --style compressed",
-        "blog-archive": "sass --watch scss/pages/_blog-archive.scss assets/css/blog-archive.css --style compressed",
-        "blog-single": "sass --watch scss/pages/_blog-single.scss assets/css/blog-single.css --style compressed",
-        "get-free-strategy": "sass --watch scss/pages/_get-free-strategy.scss assets/css/get-free-strategy.css --style compressed",
-        "contact-us": "sass --watch scss/pages/_contact-us.scss assets/css/contact-us.css --style compressed",
-        "404-error": "sass --watch scss/pages/_404-error.scss assets/css/404-error.css --style compressed",
-        "font": "sass --watch scss/base/_fonts.scss assets/css/fonts.css --style compressed",
-        "compile-main-sass": "sass --watch theme_styles.scss theme_styles.css --style compressed",
-        "compile-sass": "concurrently  \"npm run compile-main-sass\" \"npm run components\" \"npm run base\" \"npm run font\" \"npm run home\" \"npm run 404-error\" \"npm run blog-archive\" \"npm run blog-single\" \"npm run get-free-strategy\" \"npm run contact-us\" \"npm run pricing\" \"npm run content-page\" \"npm run content-page-single\""
-    },
-    "devDependencies": {
-        "concurrently": "^8.2.2"
-    }
+  "dependencies": {
+    "sass": "^1.71.1"
+  },
+  "scripts": {
+    "components": "sass --watch scss/components/_all_components.scss assets/css/all_components.css --style compressed",
+    "base": "sass --watch scss/base/_base.scss assets/css/base.css --style compressed",
+    "home": "sass --watch scss/pages/_home.scss assets/css/home.css --style compressed",
+    "about": "sass --watch scss/pages/_about-us.scss assets/css/about-us.css --style compressed",
+    "how-it-works": "sass --watch scss/pages/_how-it-works.scss assets/css/how-it-works.css --style compressed",
+    "blog-single": "sass --watch scss/pages/_blog-single.scss assets/css/blog-single.css --style compressed",
+    "client-acc-info": "sass --watch scss/pages/_client-acc-info.scss assets/css/client-acc-info.css --style compressed",
+    "pricing": "sass --watch scss/pages/_pricing.scss assets/css/pricing.css --style compressed",
+    "content-page": "sass --watch scss/pages/_content-page.scss assets/css/content-page.css --style compressed",
+    "content-page-single": "sass --watch scss/pages/_content-page-single.scss assets/css/content-page-single.css --style compressed",
+    "blog-archive": "sass --watch scss/pages/_blog-archive.scss assets/css/blog-archive.css --style compressed",
+    "get-free-strategy": "sass --watch scss/pages/_get-free-strategy.scss assets/css/get-free-strategy.css --style compressed",
+    "contact-us": "sass --watch scss/pages/_contact-us.scss assets/css/contact-us.css --style compressed",
+    "404-error": "sass --watch scss/pages/_404-error.scss assets/css/404-error.css --style compressed",
+    "font": "sass --watch scss/base/_fonts.scss assets/css/fonts.css --style compressed",
+    "compile-main-sass": "sass --watch theme_styles.scss theme_styles.css --style compressed",
+    "compile-sass": "concurrently  \"npm run compile-main-sass\" \"npm run components\" \"npm run base\" \"npm run font\" \"npm run home\" \"npm run how-it-works\" \"npm run blog-single\" \"npm run client-acc-info\" \"npm run 404-error\" \"npm run blog-archive\" \"npm run blog-single\" \"npm run get-free-strategy\" \"npm run contact-us\" \"npm run pricing\" \"npm run content-page\" \"npm run content-page-single\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
