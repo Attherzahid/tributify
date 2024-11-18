@@ -55,10 +55,17 @@
   color: white;
   background-color: var(--blue);
 }
+.btn-yellow {
+  color: white;
+  background-color: var(--secondary);
+}
 
 @media (max-width: 576px) {
   .btn {
     padding: 16px 46px 16px 20px;
+    &::before {
+      right: 12px;
+    }
   }
 }
 

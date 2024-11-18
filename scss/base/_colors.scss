@@ -23,6 +23,14 @@
   background-color: var(--primary) !important;
 }
 
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.text-yellow {
+  color: var(--secondary);
+}
+
 
 //  GrayLight Colors
 
@@ -43,9 +51,6 @@
   background-color: var(--gray);
 }
 
-.text-green {
-  color: var(--green);
-}
-.bg-green {
-  background-color: var(--green);
+.bg-gray-light-2 {
+  background-color: var(--gray-light-2);
 }

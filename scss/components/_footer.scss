@@ -1,5 +1,4 @@
 .footer {
-    background-color: var(--green-dark);
 
     .footer-top {
         padding: clamp(45px, 7vw, 80px) 0;
@@ -63,17 +62,23 @@
 }
 
 .cta-sec {
+    padding-top: clamp(45px, 5vw, 60px) clamp(45px, 7vw, 90px);
     background-color: var(--blue);
     border-radius: 0px 0px 40px 40px;
     .title{
         margin-bottom: clamp(20px, 5vw, 40px);
     }
-    .slider-wrapper {
-        width: 100%;
-        .slider-track {
+    .logo-slider {
+        margin-bottom: clamp(45px, 5vw, 60px);
+        .slick-track {
             display: flex;
             align-items: center;
-            gap: clamp(30px, 7vw, 90px);
+            gap: 10px;
+            .slick-slide {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+            }
         }
     }
 }

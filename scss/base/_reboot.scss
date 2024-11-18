@@ -138,7 +138,7 @@ hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
-  opacity: .4;
+  opacity: 0.4;
 }
 
 abbr[title],
@@ -470,4 +470,14 @@ Needed for proper display in IE 10-.
 */
 [hidden] {
   display: none !important;
+}
+
+@media (max-width: 768px) {
+  body,
+  p,
+  ul.list-style-disc li,
+  ol.list-style-decimal li,
+  .list-style-check li {
+    font-size: 14px;
+  }
 }
