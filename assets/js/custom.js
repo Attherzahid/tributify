@@ -118,4 +118,12 @@ jQuery(document).ready(function () {
     dots: false
   });
 
+  $('.alert-slider').slick({
+    autoplay: true,
+    slidesToShow: 1,
+    slideToScroll: 1,
+    arrows: false,
+    dots: false
+  });
+
 });

@@ -21,13 +21,17 @@
                 <div class="hamburger-menu">
                     <div class="bar"></div>
                 </div>
-                <ul class="menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">How It Works</a></li>
-                    <li><a href="">Client Dashboard</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
+                <div class="menu-wrapper">
+                    <button class="hamburger-menu mobile-menu-toggler">&times;</button>
+                    <ul class="menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">How It Works</a></li>
+                        <li><a href="">Client Dashboard</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                    <a href="#" class="btn btn-blue d-block mobile-obj" style="margin-top: 10px;">Login</a>
+                </div>
                 <a href="#" class="btn btn-blue d-none d-lg-block">Login</a>
             </nav>
         </div>
@@ -54,31 +58,38 @@
                 <div class="row g-3">
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card">
-                            <h2 class="offer-name fw-black">
-                                Starter
-                            </h2>
-                            <span class="badge fw-medium fs-14 d-block mb-1">
-                                Compliance
-                            </span>
-                            <div class="price d-flex align-items-center gap-1 mb-1">
-                                <span class="fw-black text-blue mb-1">$99</span>
-                                <p class="fw-normal text-gray-3 mb-0">/per month</p>
+                            <div>
+                                <h2 class="title fw-black">
+                                    Starter
+                                </h2>
+                                <div class="d-flex gap-1">
+                                    <span class="badge fw-medium fs-14 d-block mb-1">
+                                        Compliance
+                                    </span>
+                                    <span class="badge fw-medium fs-14 d-block mb-1">
+                                        Security
+                                    </span>
+                                </div>
+                                <div class="price d-flex align-items-center gap-1 mb-1">
+                                    <span class="fw-black text-blue mb-1">$99</span>
+                                    <p class="fw-normal text-gray-3 mb-0">/per month</p>
+                                </div>
+                                <div class="custom-hr mb-3"></div>
+                                <p class="mb-3 text-gray">Designed for organizations starting their cybersecurity
+                                    journey, needing foundational
+                                    security guidance and compliance assistance.</p>
+                                <div class="custom-hr mb-3"></div>
+                                <ul class="list-with-icon mb-3">
+                                    <li>Conduct a high-level gap assessment</li>
+                                    <li>Customize controls and policies</li>
+                                    <li>Meet with executive management</li>
+                                    <li>Establish a program roadmap</li>
+                                    <li>Complete 1 Security Assessment Questionnaire</li>
+                                    <li>Provide resources around compliance efforts</li>
+                                    <li>Facilitate penetration testing</li>
+                                </ul>
+                                <div class="custom-hr mb-4"></div>
                             </div>
-                            <div class="custom-hr mb-3"></div>
-                            <p class="mb-3 text-gray">Designed for organizations starting their cybersecurity
-                                journey, needing foundational
-                                security guidance and compliance assistance.</p>
-                            <div class="custom-hr mb-3"></div>
-                            <ul class="list-with-icon mb-3">
-                                <li>Conduct a high-level gap assessment</li>
-                                <li>Customize controls and policies</li>
-                                <li>Meet with executive management</li>
-                                <li>Establish a program roadmap</li>
-                                <li>Complete 1 Security Assessment Questionnaire</li>
-                                <li>Provide resources around compliance efforts</li>
-                                <li>Facilitate penetration testing</li>
-                            </ul>
-                            <div class="custom-hr mb-4"></div>
                             <a href="#" class="btn btn-blue d-block">
                                 Free ASIN Audit
                             </a>
@@ -86,76 +97,137 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card featured bg-blue">
-                            <h2 class="offer-name fw-black text-white">
-                                Professional
-                            </h2>
-                            <div class="d-flex" style="gap: 2px;">
-                                <span class="badge fw-medium fs-14 d-block mb-1">
-                                    Compliance
-                                </span>
-                                <span class="badge fw-medium fs-14 d-block mb-1">
-                                    Security
-                                </span>
+                            <div>
+                                <h2 class="title fw-black text-white">
+                                    Professional
+                                </h2>
+                                <div class="d-flex gap-1">
+                                    <span class="badge fw-medium fs-14 d-block mb-1">
+                                        Compliance
+                                    </span>
+                                    <span class="badge fw-medium fs-14 d-block mb-1">
+                                        Security
+                                    </span>
+                                </div>
+                                <div class="price d-flex align-items-center gap-1 mb-1">
+                                    <span class="fw-black text-secondary fs-40 mb-1">$189</span>
+                                    <p class="fw-normal text-bright-gray mb-0">/per month</p>
+                                </div>
+                                <div class="custom-hr mb-3"></div>
+                                <p class="mb-3 text-white">Aimed at organizations ready to enhance their cybersecurity
+                                    posture with more advanced strategies and compliance management.</p>
+                                <div class="custom-hr mb-3"></div>
+                                <ul class="list-with-icon mb-4 text-white">
+                                    <li>Weekly configuration monitoring through our proprietary AuditOps platform</li>
+                                    <li>Digital footprint and risk monitoring</li>
+                                    <li>Monthly technical assessment of your cloud security posture, architecture,
+                                        permissions and entitlements</li>
+                                    <li>Dedicated resource to support your sales cycle for all security/compliance inquiries
+                                    </li>
+                                </ul>
+                                <div class="custom-hr mb-4"></div>
                             </div>
-                            <div class="price d-flex align-items-center gap-1 mb-1">
-                                <span class="fw-black text-secondary fs-40 mb-1">$189</span>
-                                <p class="fw-normal text-bright-gray mb-0">/per month</p>
-                            </div>
-                            <div class="custom-hr mb-3"></div>
-                            <p class="mb-3 text-white">Aimed at organizations ready to enhance their cybersecurity
-                                posture with more advanced strategies and compliance management.</p>
-                            <div class="custom-hr mb-3"></div>
-                            <ul class="list-with-icon mb-4 text-white">
-                                <li>Weekly configuration monitoring through our proprietary AuditOps platform</li>
-                                <li>Digital footprint and risk monitoring</li>
-                                <li>Monthly technical assessment of your cloud security posture, architecture,
-                                    permissions and entitlements</li>
-                                <li>Dedicated resource to support your sales cycle for all security/compliance inquiries
-                                </li>
-                            </ul>
-                            <div class="custom-hr mb-4"></div>
-                            <a href="#" class="btn btn-blue d-block bg-white text-blue">
+                            <a href="#" class="btn btn-blue d-block">
                                 Free ASIN Audit
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card">
-                            <h2 class="offer-name fw-black">
-                                Enterprise
-                            </h2>
-                            <div class="d-flex" style="gap: 2px;">
-                                <span class="badge fw-medium fs-14 d-block mb-1">
-                                    Compliance
-                                </span>
-                                <span class="badge fw-medium fs-14 d-block mb-1">
-                                    Security
-                                </span>
-                                <span class="badge fw-medium fs-14 d-block mb-1">
-                                    Privacy
-                                </span>
+                            <div>
+                                <h2 class="title fw-black">
+                                    Enterprise
+                                </h2>
+                                <div class="d-flex gap-1">
+                                    <span class="badge fw-medium fs-14 d-block mb-1">
+                                        Compliance
+                                    </span>
+                                    <span class="badge fw-medium fs-14 d-block mb-1">
+                                        Security
+                                    </span>
+                                </div>
+                                <div class="price d-flex align-items-center gap-1 mb-1">
+                                    <span class="fw-black text-blue fs-40 mb-1">$249</span>
+                                    <p class="fw-normal text-gray-3 mb-0">/per month</p>
+                                </div>
+                                <div class="custom-hr mb-3"></div>
+                                <p class="mb-3 text-gray">Best suited for organizations looking to outsource their
+                                    compliance and security needs entirely, requiring a partner to drive strategy, produce
+                                    results, and fulfill the role of a vCISO and supporting security team, as mandated by
+                                    major standards and regulations.</p>
+                                <div class="custom-hr mb-3"></div>
+                                <ul class="list-with-icon mb-3">
+                                    <li>Data Privacy Officer service</li>
+                                    <li>Transfer Impact Assessments/Business Impact Analysis services</li>
+                                    <li>Design and implementation of a public security page</li>
+                                </ul>
+                                <div class="custom-hr mb-4"></div>
                             </div>
-                            <div class="price d-flex align-items-center gap-1 mb-1">
-                                <span class="fw-black text-blue fs-40 mb-1">$249</span>
-                                <p class="fw-normal text-gray-3 mb-0">/per month</p>
-                            </div>
-                            <div class="custom-hr mb-3"></div>
-                            <p class="mb-3 text-gray">Best suited for organizations looking to outsource their
-                                compliance and security needs entirely, requiring a partner to drive strategy, produce
-                                results, and fulfill the role of a vCISO and supporting security team, as mandated by
-                                major standards and regulations.</p>
-                            <div class="custom-hr mb-3"></div>
-                            <ul class="list-with-icon mb-90 mb-w1209-162px">
-                                <li>Data Privacy Officer service</li>
-                                <li>Transfer Impact Assessments/Business Impact Analysis services</li>
-                                <li>Design and implementation of a public security page</li>
-                            </ul>
-                            <div class="custom-hr mb-4"></div>
                             <a href="#" class="btn btn-blue d-block">
                                 Free ASIN Audit
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-sec">
+            <div class="container">
+                <div style="overflow: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align: start; padding-left: 0;"><span class="d-block h3">Internal
+                                        Only</span>
+                                    <small>(Rough Hours)</small>
+                                </th>
+                                <th><span class="d-block fw-black title">15 hours</span></th>
+                                <th><span class="d-block fw-black title">20-40 hour</span></th>
+                                <th><span class="d-block fw-black title">40-60 hrs a month of work</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <td><span class="d-block text-center fw-black title">3500 USD</span></td>
+                                <td><span class="d-block text-center fw-black title">5000 USD</span></td>
+                                <td><span class="d-block text-center fw-black title">8000 USD</span></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Designed for organizations starting their cybersecurity journey, needing foundational
+                                    security guidance and compliance assistance.</td>
+                                <td>Designed for organizations starting their cybersecurity journey, needing foundational
+                                    security guidance and compliance assistance.</td>
+                                <td>Designed for organizations starting their cybersecurity journey, needing foundational
+                                    security guidance and compliance assistance.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="d-block h3 mb-0">Plan</span></td>
+                                <td><span class="d-block text-center text-blue fw-black title">Good</span></td>
+                                <td><span class="d-block text-center text-blue fw-black title">Better</span></td>
+                                <td><span class="d-block text-center text-blue fw-black title">Best</span></td>
+                            </tr>
+                            <tr>
+                                <td>Understand your IT environment and security program to provide expert insight</td>
+                                <td><img src="./assets/img/icons/table-tick-icon.svg" width="23" height="24"
+                                        class="d-block mx-auto" alt="table-icon"></td>
+                                <td><img src="./assets/img/icons/table-tick-icon.svg" width="23" height="24"
+                                        class="d-block mx-auto" alt="table-icon"></td>
+                                <td><img src="./assets/img/icons/table-tick-icon.svg" width="23" height="24"
+                                        class="d-block mx-auto" alt="table-icon"></td>
+                            </tr>
+                            <tr>
+                                <td>Understand your IT environment and security program to provide expert insight</td>
+                                <td><img src="./assets/img/icons/table-tick-icon.svg" width="23" height="24"
+                                        class="d-block mx-auto" alt="table-icon"></td>
+                                <td><img src="./assets/img/icons/table-tick-icon.svg" width="23" height="24"
+                                        class="d-block mx-auto" alt="table-icon"></td>
+                                <td><img src="./assets/img/icons/table-tick-icon.svg" width="23" height="24"
+                                        class="d-block mx-auto" alt="table-icon"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
