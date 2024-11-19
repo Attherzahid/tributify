@@ -3,6 +3,7 @@
 
   .input-wrapper {
     margin-bottom: 0;
+
     &::before {
       content: "";
       position: absolute;
@@ -15,12 +16,14 @@
       top: 18px;
       filter: brightness(1.5);
     }
+
     .form-control {
       background-color: #ffffff;
       border-radius: 61px;
       border: 0.6px solid #c8daff;
       padding-left: 58px;
       height: 54px;
+
       &::placeholder {
         font-size: clamp(14px, 3.5vw, 18px);
       }
@@ -31,15 +34,18 @@
 .advice-sec {
   .card {
     padding: 27px 45px 19px 30px;
+
     span {
       text-transform: uppercase;
       opacity: 60%;
     }
+
     .card-title {
       font-size: 30px;
       text-transform: capitalize;
       font-size: clamp(20px, 3.5vw, 30px);
     }
+
     .btn {
       padding-left: 0;
       padding-top: 0;
@@ -48,11 +54,13 @@
       box-shadow: none;
       text-transform: uppercase;
       color: black;
+
       &::before {
         filter: invert(1);
       }
     }
   }
+
   .pagination {
     display: flex;
     align-items: center;
@@ -68,12 +76,14 @@
       border: 1px solid #e8e8f0;
       border-radius: 8px;
       text-align: center;
+
       &.active {
         background-color: var(--blue);
         color: #fff;
         border-color: var(--blue);
       }
     }
+
     .next-page {
       padding: 8px 16px;
       font-size: 14px;
@@ -85,6 +95,38 @@
       border: none;
     }
   }
+}
+
+.help-center-sec {
+  .card {
+    padding: 16px 16px;
+
+    .icon {
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .title {
+      font-size: clamp(18px, 3.5vw, 22px);
+    }
+
+    p {
+      font-size: clamp(13px, 3.5vw, 16px);
+    }
+  }
+}
+
+
+
+@media (max-width:768px) {
+  .help-center-sec {
+    .card {
+      padding: 8px 10px;
+    }
+  }
+
+
 }
 
 @media (max-width: 576px) {
