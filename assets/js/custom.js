@@ -158,14 +158,12 @@ jQuery(document).ready(function () {
     }
   });
 
-  $('#passwordToggler').on('click', function () {
-    let passInput = $('#loginPassword');
-    if (passInput.attr('type') == 'password') {
-      passInput.attr('type', 'text');
+  $('.passwordToggler').on('click', function () {
+    let passInput = $(this).siblings('input[type="password"], input[type="text"]');
+    if (passInput.attr('type') === 'password') {
+        passInput.attr('type', 'text');
     } else {
-      passInput.attr('type', 'password');
+        passInput.attr('type', 'password');
     }
-
-  });
-
+});
 });

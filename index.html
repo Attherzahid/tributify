@@ -426,7 +426,7 @@
                     <label for="loginPassword" class="form-label">Password</label>
                     <div class="position-relative">
                         <input type="password" id="loginPassword" class="form-control" placeholder="Enter Your Password">
-                        <button type="button" id="passwordToggler"><img src="./assets/img/icons/eye.svg" alt="eye" width="17" height="14"></button>
+                        <button type="button" class="passwordToggler"><img src="./assets/img/icons/eye.svg" alt="eye" width="17" height="14"></button>
                     </div>
                 </div>
                 <div class="input-wrapper mb-4">
@@ -440,6 +440,46 @@
                 <button class="btn btn-primary w-100 mb-2 no-arrow" style="max-width: unset;">Login</button>
                 <div class="d-flex justify-content-center gap-1">
                     <span class="d-block">Dont't have an account?</span>
+                    <a href="javascript:void(0)" data-target="#signupModal" class="close-modal">Signup</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="signupModal" class="modal login-modal">
+        <div class="modal-content">
+            <button class="close close-modal">
+                <img src="./assets/img/icons/close.svg" alt="close-img" width="20" height="20">
+            </button>
+            <span class="h3 d-block text-center">Signup</span>
+            <form action="" class="mx-auto" style="max-width: 400px;">
+                <div class="input-wrapper">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter Your Email">
+                </div>
+                <div class="input-wrapper">
+                    <label for="signupPassword" class="form-label">Password</label>
+                    <div class="position-relative">
+                        <input type="password" id="signupPassword" class="form-control" placeholder="Enter Your Password">
+                        <button type="button" class="passwordToggler"><img src="./assets/img/icons/eye.svg" alt="eye" width="17" height="14"></button>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                    <div class="position-relative">
+                        <input type="password" id="signupConfirmPassword" class="form-control" placeholder="Enter Your Password">
+                        <button type="button" class="passwordToggler"><img src="./assets/img/icons/eye.svg" alt="eye" width="17" height="14"></button>
+                    </div>
+                </div>
+                <div class="input-wrapper mb-4">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap">
+                        <label class="d-flex gap-1 align-items-center">
+                            <input type="checkbox" name="rememberme" value="forever"> Keep me signed in
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-primary w-100 mb-2 no-arrow" style="max-width: unset;">Login</button>
+                <div class="d-flex justify-content-center gap-1">
+                    <span class="d-block">Already have an account?</span>
                     <a href="">Signup</a>
                 </div>
             </form>
