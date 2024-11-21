@@ -25,21 +25,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background-color: #FFFFFF3D;
+        .footer-inner {
+            background-color: var(--blue);
+            border-radius: 10px;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .footer-bottom-menu {
+            gap: 30px;
             li {
                 position: relative;
-
                 &::before {
                     content: "";
                     position: absolute;
@@ -50,7 +49,7 @@
                     transform: translateY(-50%);
                     background-color: white;
                 }
-
+    
                 &:last-child {
                     &::before {
                         display: none;
@@ -92,8 +91,10 @@
         }
 
         .footer-bottom {
-            flex-direction: column;
-            gap: 15px;
+            background-color: var(--blue);
+            .footer-inner {
+                padding: 0;
+            }
         }
     }
 }

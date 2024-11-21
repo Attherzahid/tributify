@@ -19,38 +19,7 @@
   }
 }
 
-.banner-sec {
-  padding: clamp(45px, 5vw, 60px) 0;
 
-  .input-wrapper {
-    margin-bottom: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url('./../../assets/img/icons/search-ico.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 26px;
-      height: 26px;
-      left: 18px;
-      top: 18px;
-      filter: brightness(1.5);
-    }
-
-    .form-control {
-      background-color: #ffffff;
-      border-radius: 61px;
-      border: 0.6px solid #c8daff;
-      padding-left: 58px;
-      height: 54px;
-
-      &::placeholder {
-        font-size: clamp(14px, 3.5vw, 18px);
-      }
-    }
-  }
-}
 
 .advice-sec {
   .card {
@@ -118,25 +87,7 @@
   }
 }
 
-.help-center-sec {
-  .card {
-    padding: 16px 16px;
 
-    .icon {
-      border-radius: 50px;
-      width: 50px;
-      height: 50px;
-    }
-
-    .title {
-      font-size: clamp(18px, 3.5vw, 22px);
-    }
-
-    p {
-      font-size: clamp(13px, 3.5vw, 16px);
-    }
-  }
-}
 
 
 

@@ -67,7 +67,7 @@
 
 
 .bg-gray-light-2 {
-  background-color: var(--gray-light-2);
+  background-color: var(--gray-light-2) !important;
 }
 
 // gray 3 colors
@@ -88,15 +88,6 @@
   background-color: var(--green);
 }
 
-// ghost white
-
-.bg-ghost-white {
-  background-color: var(--ghost-white);
-}
-
-.text-ghost-white {
-  color: var(--ghost-white);
-}
 
 // bright gray
 

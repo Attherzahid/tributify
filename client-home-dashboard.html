@@ -26,15 +26,36 @@
                 <div class="menu-wrapper">
                     <button class="hamburger-menu mobile-menu-toggler">&times;</button>
                     <ul class="menu">
-                        <li><a href="">Home</a></li>
+                        <li><a href="" class="active">Home</a></li>
                         <li><a href="">Pricing</a></li>
                         <li><a href="">How It Works</a></li>
                         <li><a href="">Client Dashboard</a></li>
                         <li><a href="">Contact Us</a></li>
                     </ul>
-                    <a href="#" class="btn btn-blue d-block mobile-obj" style="margin-top: 10px;">Login</a>
+                    <a href="#" class="mobile-obj" style="margin-top: 20px;">
+                        <div class="notification-link-wrapper">
+                            <div class="icon-wrapper">
+                                <div class="notificaton-count">0</div>
+                                <img src="./assets/img/icons/bell-ico.svg" alt="icon" width="16" height="20">
+                            </div>
+                            <div class="link-text">Notifications</div>
+                        </div>
+                    </a>
                 </div>
-                <a href="#" class="btn btn-blue d-none d-lg-block">Login</a>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="d-none d-lg-flex">
+                        <div class="notification-link-wrapper">
+                            <div class="icon-wrapper">
+                                <div class="notificaton-count">0</div>
+                                <img src="./assets/img/icons/bell-ico.svg" alt="icon" width="16" height="20">
+                            </div>
+                            <div class="link-text">Notifications</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-block">
+                        <img src="./assets/img/dummy-profile.webp" alt="profile-img" width="40" height="40" class="user-img">
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -77,48 +98,55 @@
         </section>
         <section class="bg-gray-light main-sec">
             <div class="container">
-                <div class="row custom-row g-3">
-                    <div class="col-lg-3">
-                        <div class="cols-wrapper bg-white">
-                            <div style="height: fit-content;"
-                                class="w-100 d-flex justify-content-between align-items-center flex-wrap mb-2">
-                                <span class="fs-20 d-block">Link Manager</span>
-                                <a href="#" class="text-blue d-block">Hide</a>
-                            </div>
-                            <a href="" class="folder mb-2">
-                                <p class="mb-0">My Folders</p>
-                                <div class="circle">0</div>
-                            </a>
-                            <a href="#" class="btn btn-primary d-block">Create a Folder</a>
+                <div class="grid-wrapper">
+                    <div class="cols-wrapper bg-white padding sidebar">
+                        <div style="height: fit-content;"
+                            class="w-100 d-flex justify-content-between align-items-center flex-wrap mb-2">
+                            <span class="fs-20 d-block">Link Manager</span>
+                            <a href="#" class="text-blue d-block">Hide</a>
                         </div>
+                        <a href="" class="folder-wrapper mb-2">
+                            <p class="mb-0">My Folders</p>
+                            <div class="circle">0</div>
+                        </a>
+                        <a href="#" class="btn btn-primary no-arrow d-block">Create a Folder</a>
                     </div>
-                    <div class="col-lg-9">
-                        <div class="cols-wrapper bg-white">
-                            <div class="tab">
-                                <div class="tab-header mb-3">
-                                    <div class="d-flex gap-3 align-items-center flex-wrap">
-                                        <button class="btn-border">All Links</button>
-                                        <button class="btn-border">Unclassified Links</button>
-                                    </div>
-                                    <button class="btn-outline">Create a Link</button>
-                                </div>
-                                <div class="tab-content">
-                                    <div class="card bg-blue">
+                    <div class="cols-wrapper bg-white" style="flex-grow: 1;">
+                        <div class="tab">
+                            <div class="d-flex flex-wrap gap-3"></div>
+                            <div class="nav-tabs">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#allLink">All Links</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#unclassifiedLinks">Unclassified Links</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div id="allLink" class="tab-pane active">
+                                    <div class="card welcome-card bg-blue">
                                         <div class="content-wrapper mb-2">
-                                            <div>
+                                            <img src="./assets/img/rocket-img.webp" width="118" height="118"
+                                                alt="rocket-image" loading="lazy" class="order-lg-2">
+                                            <div class="order-lg-1">
                                                 <span class="h5 main-title text-white d-block">Welcome to
                                                     Tributify!!</span>
-                                                <p class="mb-0 text-white">Brand, track & share your own branded short
+                                                <p class="mb-0 text-white">Brand, track & share your own branded
+                                                    short
                                                     URLs & retarget anyone who clicked on tour links!</p>
                                             </div>
-                                            <img src="./assets/img/rocket-img.webp" width="118" height="118" alt="rocket-image" loading="lazy">
                                         </div>
-                                        <div class="buttons">
+                                        <div class="btn-group">
                                             <a href="#" class="tab-btn btn-secondary">Create Your First Link</a>
                                             <a href="#" class="tab-btn btn-white">Create Your First Link</a>
                                             <a href="#" class="tab-btn btn-outline">Create Your First Link</a>
                                         </div>
                                     </div>
+                                </div>
+                                <div id="unclassifiedLinks" class="tab-pane">
+                                    <p>Content for Tab 2</p>
                                 </div>
                             </div>
                         </div>

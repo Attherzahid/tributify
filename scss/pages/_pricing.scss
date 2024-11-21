@@ -1,7 +1,7 @@
 .featured-card-sec {
   .card {
     padding: 42px 28px;
-    background-color: var(--ghost-white);
+    background-color: var(--gray-light-2);
     border-radius: 20px;
     height: 100%;
     display: flex;
@@ -93,60 +93,6 @@
           border-bottom: none;
         }
       }
-    }
-  }
-}
-
-.account-info-sec {
-  .owner,
-  .team-member,
-  .my-team-members {
-    padding: 30px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    position: relative;
-    .title {
-      font-size: clamp(16px, 3.5vw, 22px);
-    }
-    .custom-hr {
-      border-bottom: 1px solid #ededed !important;
-      margin-bottom: 24px;
-    }
-    .details {
-      .form-control {
-        background-color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        padding: 18px 20px;
-
-        &::placeholder {
-          font-size: clamp(13px, 3.5vw, 18px);
-        }
-      }
-    }
-  }
-  .team-member .details .form-control {
-    border: 1px solid var(--gray);
-  }
-  .my-team-members p {
-    color: #33333380;
-    font-size: clamp(14px, 3.5vw, 18px);
-  }
-}
-
-.help-center-sec {
-  .card {
-    padding: 16px 16px;
-    .icon {
-      border-radius: 50px;
-      width: 50px;
-      height: 50px;
-    }
-    .title {
-      font-size: clamp(18px, 3.5vw, 22px);
-    }
-    p {
-      font-size: clamp(13px, 3.5vw, 16px);
     }
   }
 }

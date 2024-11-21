@@ -234,18 +234,9 @@
       background-color: var(--gray-light);
     }
   }
-  &:hover {
-    .form-label {
-      color: var(--primary);
-    }
-  }
   .form-label {
-    position: absolute;
-    left: 17px;
-    top: -5px;
-    background-color: white;
-    padding: 0 8px;
-    transition: 0.3s;
+    font-size: 20px;
+    font-weight: bold;
   }
   .form-control {
     border: 1px solid #676767;
@@ -253,7 +244,7 @@
     width: 100%;
     outline: none;
     background-color: transparent;
-    padding: 12px 17px;
+    padding: 18px 20px;
     margin-top: 5px;
     transition: 0.3s;
     &:focus,
@@ -317,6 +308,79 @@
 }
 .round-20 {
   border-radius: 20px;
+}
+
+.modal {
+  display: none; // Hidden by default
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, .57);
+
+  &.fade {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &.show {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1; // Transition effect
+    }
+  }
+
+  .modal-content {
+    background-color: white; // Use variable for content background
+    margin: auto;
+    padding: clamp(40px, 5vw, 70px) 20px;
+    width: calc(100% - 40px);
+    max-width: 550px;
+    border-radius: 20px;
+    position: relative;
+
+    .close {
+      color: white; // Use variable for close button color
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      z-index: 1;
+      border-radius: 4px;
+      background-color: var(--blue);
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+      }
+    }
+  }
+  &.login-modal {
+    .input-wrapper {
+      position: relative;
+      #passwordToggler {
+        background-color: transparent;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .btn {
+      background: linear-gradient(120deg,
+      rgba(66, 102, 178, 1) 0%,
+      rgba(149, 68, 156, 1) 50%,
+      rgba(254, 153, 0, 1) 100%);
+      font-size: 22px;
+    }
+  }
 }
 @media (min-width: 991px) {
   .d-lg-block {

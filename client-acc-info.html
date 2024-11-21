@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="./assets/css/plugin/slick.css">
     <link rel="stylesheet" href="./assets/css/plugin/slick-theme.css">
     <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/client-home-dashboard.css" />
     <link rel="stylesheet" href="./assets/css/client-acc-info.css" />
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header-2">
         <div class="container">
             <nav class="navbar">
                 <a href="/" class="navbar-brand">
@@ -26,15 +27,37 @@
                 <div class="menu-wrapper">
                     <button class="hamburger-menu mobile-menu-toggler">&times;</button>
                     <ul class="menu">
-                        <li><a href="">Home</a></li>
+                        <li><a href="" class="active">Home</a></li>
                         <li><a href="">Pricing</a></li>
                         <li><a href="">How It Works</a></li>
                         <li><a href="">Client Dashboard</a></li>
                         <li><a href="">Contact Us</a></li>
                     </ul>
-                    <a href="#" class="btn btn-blue d-block mobile-obj" style="margin-top: 10px;">Login</a>
+                    <a href="#" class="mobile-obj" style="margin-top: 20px;">
+                        <div class="notification-link-wrapper">
+                            <div class="icon-wrapper">
+                                <div class="notificaton-count">0</div>
+                                <img src="./assets/img/icons/bell-ico.svg" alt="icon" width="16" height="20">
+                            </div>
+                            <div class="link-text">Notifications</div>
+                        </div>
+                    </a>
                 </div>
-                <a href="#" class="btn btn-blue d-none d-lg-block">Login</a>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="d-none d-lg-flex">
+                        <div class="notification-link-wrapper">
+                            <div class="icon-wrapper">
+                                <div class="notificaton-count">0</div>
+                                <img src="./assets/img/icons/bell-ico.svg" alt="icon" width="16" height="20">
+                            </div>
+                            <div class="link-text">Notifications</div>
+                        </div>
+                    </a>
+                    <a href="" class="d-block">
+                        <img src="./assets/img/dummy-profile.webp" alt="profile-img" width="40" height="40"
+                            class="user-img">
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -65,134 +88,72 @@
                 </div>
             </div>
         </section>
-        <section class="hero-sec">
+        <section class="main-sec bg-gray-light">
             <div class="container">
-                <div class="hero-inner">
-                    <div class="content-wrapper d-flex flex-column justify-content-center h-100">
-                        <span class="span d-block mb-2 fw-bold">Amazon Attribution Campaigns</span>
-                        <h1 style="max-width: 520px;" class="h3">Create, Launch & Track Ads <span class="text-gradient">
-                                For
-                                Your Amazon
-                                Products!</span></h1>
-                        <p class="mb-0">Connect your Amazon attribution account & your ad accounts to launch ads from
-                            Tributify &
-                            track all the results of your ads at the same place.</p>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="./assets/img/client-info-hero-sec.webp" width="247" height="247" alt="hero-sec-img">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="step-sec pb-0">
-            <div class="container">
-                <div class="step-card">
-                    <ul class="step-list">
-                        <li>
-                            <span class="d-block fw-bold mb-2">Step 1 - Track results of your campaigns with
-                                Amazon Attribution</span>
-                            <div class="step step-1">
-                                <div class="icon">1</div>
-                                <div class="content">
-                                    <span class="d-block fw-bold mb-1">Connect your Amazon Attribution
-                                        Account</span>
-                                    <p class="mb-0">We ask customers specific questions about what they are looking for.
-                                    </p>
+                <div class="cols-wrapper bg-white padding">
+                    <div class="client-acc-info-wrapper">
+                        <div class="row g-3">
+                            <div class="col-lg-8">
+                                <div class="content-wrapper">
+                                    <span class="span d-block mb-2 fw-bold">Amazon Attribution Campaigns</span>
+                                    <h1 style="max-width: 520px;" class="h3">Create, Launch & Track Ads <span
+                                            class="text-gradient">
+                                            For
+                                            Your Amazon
+                                            Products!</span></h1>
+                                    <p class="mb-0">Connect your Amazon attribution account & your ad accounts to launch ads
+                                        from
+                                        Tributify &
+                                        track all the results of your ads at the same place.</p>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <span class="d-block fw-bold mb-2">Step 2 - Launch ads from Tributify</span>
-                            <div class="step step-2">
-                                <div class="icon">2</div>
-                                <div class="content">
-                                    <a href="#" class="d-block fw-bold">+ Add a New Ad Platform</a>
-                                </div>
+                            <div class="col-lg-4">
+                                <img src="./assets/img/client-info-hero-sec.webp" width="247" height="247"
+                                    alt="hero-sec-img" class="img-fluid mx-auto d-block" style="max-width: 247px;">
                             </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="amazon-sec">
-            <div class="container">
-                <p class="mb-4">No Amazon Attribution Account Yet? <a href="#" class="fw-bold">Request An Access Here
-                    </a></p>
-                <div class="amazon-inner">
-                    <p class="mb-0">Note: Amazon Attribution is only available for Amazon 3P Sellers & Amazon 1P
-                        Vendors.</p>
-                    <a href="#" class="btn btn-primary d-block">LEARN MORE</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row g-3">
-                    <div class="col-md-6 col-lg-4">
-                        <img src="./assets/img/logo.webp" alt="logo" class="logo mb-4" width="188" height="53">
-                        <p class="mb-3" style="font-size: 18px; opacity: .7; max-width: 278px;">Contrary to popular
-                            belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-                            literature from 45 BC.</p>
-                        <ul class="d-flex align-items-center gap-1">
-                            <li><a href=""><img src="./assets/img/icons/facboook-ico.svg" alt="facboook-ico" width="32"
-                                        height="32"></a></li>
-                            <li><a href=""><img src="./assets/img/icons/twitter-ico.svg" alt="twitter-ico" width="32"
-                                        height="32"></a></li>
-                            <li><a href=""><img src="./assets/img/icons/instagram-ico.svg" alt="instagram-ico"
-                                        width="32" height="32"></a></li>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <ul class="step-list">
+                            <li>
+                                <span class="d-block fw-bold mb-2">Step 1 - Track results of your campaigns with
+                                    Amazon Attribution</span>
+                                <div class="step step-1">
+                                    <div class="icon">1</div>
+                                    <div class="content">
+                                        <span class="d-block fw-bold mb-1">Connect your Amazon Attribution
+                                            Account</span>
+                                        <p class="mb-0">We ask customers specific questions about what they are looking
+                                            for.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="d-block fw-bold mb-2">Step 2 - Launch ads from Tributify</span>
+                                <div class="step step-2">
+                                    <div class="icon">2</div>
+                                    <div class="content">
+                                        <a href="#" class="d-block fw-bold">+ Add a New Ad Platform</a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-5 col-lg-2">
-                        <span class="d-block font-AvenirLTStd-Heavy text-primary mb-3 fs-20">Company</span>
-                        <ul class="menu ms-lg-4">
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./about-us.html">About Us</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./success-stories.html">Success Stories</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-7 col-md-6 col-lg-3 col-xl-2">
-                        <span class="d-block font-AvenirLTStd-Heavy text-primary mb-3 fs-20">Contact</span>
-                        <ul class="menu">
-                            <li><a href="">Influencer Marketing</a></li>
-                            <li><a href="">Social ADS</a></li>
-                            <li><a href="">Social Media Management</a></li>
-                            <li><a href="">Press Media</a></li>
-                            <li><a href="">Community Management</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-5 col-lg-3">
-                        <div class="get-in-touch-wrapper pb-lg-5 mt-4 mt-lg-0">
-                            <span for="newsletter" class="d-block font-Poppins text-gradient mb-3 fs-20">Get In
-                                Touch</span>
-                            <a href="mailto:info@cmedia.com" class="mb-3"><img class="me-2"
-                                    src="./assets/img/mail-icon-light.webp" alt="icon">info@cmedia.com</a>
-                            <a href="" class="mb-3"><img class="me-2" src="./assets/img/telegram-ico-light.webp"
-                                    alt="icon">@RMT2196</a>
-                            <a href="#"><img class="me-2" src="./assets/img/marker-light.webp" alt="icon">Andorra la
-                                Vella</a>
+                    <div class="amazon-wrapper">
+                        <p class="mb-4">No Amazon Attribution Account Yet? <a href="#" class="fw-bold">Request An Access
+                                Here
+                            </a></p>
+                        <div class="amazon-inner flex-wrap gap-1">
+                            <p class="mb-0">Note: Amazon Attribution is only available for Amazon 3P Sellers & Amazon 1P
+                                Vendors.</p>
+                            <a href="#" class="btn btn-primary d-block">LEARN MORE</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-                    <p class="mb-0 lead">© 2024 CMedia Marketing Agency l All Rights Reserved</p>
-                    <div class="footer-social-list d-flex gap-2 align-items-center justify-content-center">
-                        <a href="#" class="icon telegram"><img src="./assets/img/telegram-ico.webp" alt="telegram-icon"
-                                width="34" height="34"></a>
-                        <a href="#" class="icon telegram"><img src="./assets/img/linkedin-ico.webp" alt="telegram-icon"
-                                width="34" height="34"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </section>
+    </main>
 </body>
 
 
